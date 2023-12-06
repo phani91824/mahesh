@@ -1,0 +1,17 @@
+*{background-color:lightsteelblue}
+
+h3{
+  border-style:solid;
+  border-color:black;
+  background-color:white;
+  border-width:2px;
+}
+
+h1{background-color:gray;}
+h1{border: 3px solid;}
+h2{
+  border-style:solid;
+  border-color:black;
+  background-color:gray;
+  border-width:2px;
+}
