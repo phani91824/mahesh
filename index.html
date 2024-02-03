@@ -77,6 +77,41 @@
 .info p {
   line-height: 2rem;
 }
+		blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 4em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float:right;
+    font-size:4em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+
+
+
+
+#bio {
+  background: url('https://res.cloudinary.com/codier/image/upload/v1610554675/ck7p6ahhuriv9n9wajxb.jpg')no-repeat center center fixed;
+  background-size: cover;
+  
+}
 .container-bio {
   	padding-top: 550px;
  	 width: 100%;
