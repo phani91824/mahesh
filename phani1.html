@@ -1,61 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SSMB</title>
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #3498db; /* Background color for the entire page */
-    }
 
-    h1 {
-      font-size: 3em;
-      font-family: 'Arial', sans-serif; /* Font family */
-      color: #fff; /* Text color */
-      animation: bounce 2s infinite, colorChange 5s infinite; /* Bouncing and color-changing animations */
-    }
+!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Avengers </title>
+<style>
+    
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-20px);
-      }
-      60% {
-        transform: translateY(-10px);
-      }
-    }
+}
 
-    @keyframes colorChange {
-      0% {
-        color: #fff;
-      }
-      25% {
-        color: #e74c3c;
-      }
-      50% {
-        color: #2ecc71;
-      }
-      75% {
-        color: #f39c12;
-      }
-      100% {
-        color: #fff;
-      }
-    }
-  </style>
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background-color: red;
+}
+header {
+  min-height: 10vh;
+  background-color: #1b1b1b;
+  padding: 1.3rem 0rem;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  z-index: 99;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+}
+
+#navImg {
+  justify-content: flex-start;
+  flex-grow: 3;
+  padding-left: 50px;
+}
+
+#navImg img {
+  height: 70px;
+  color: white;
+}
+ nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  padding-right: 60px;
+  list-style-type: none;  
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+section {
+  min-height: 100vh;
+  background-color: red;
+  background: url('https://res.cloudinary.com/codier/image/upload/v1610509461/s6tx81ata2tal3epwnu3.jpg') no-repeat center 115px fixed;
+  background-size: cover;
+}
+
+.container {
+  padding-top: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  color: white;
+}
+
+.info {
+  width: 40%;
+}
+.info h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.info p {
+  line-height: 2rem;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 4em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float:right;
+    font-size:4em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+
+
+
+
+#bio {
+  background: url('https://res.cloudinary.com/codier/image/upload/v1610554675/ck7p6ahhuriv9n9wajxb.jpg')no-repeat center center fixed;
+  background-size: cover;
+  
+}
+
+.container-bio {
+  padding-top: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end;
+  color: white;
+  padding-right: 30px;
+}
+
+.container-bio .info {
+  border-radius: 25px;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.2); 
+  -webkit-backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
+}
+
+footer {
+  height: 100px;
+  background-color: #1b1b1b;
+  text-align: center;
+  color: white;
+}
+
+footer h3 {
+  padding-top: 50px;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: white;
+}
+</style>
 </head>
-<body>
-  <center>   <h1>MAHESH BABU</h1>  </center>
-
-
+  <body>
+   <header>
+     <nav>
+       <div id="navImg">
+         <img src="https://res.cloudinary.com/codier/image/upload/v1610549958/qczezo2jvsgznti3pqfo.svg" alt="logo">
+       </div>
+       <ul>
+         <li><a href="#" >About</a></li>
+         <li><a href="#" >Join</a></li>
+         <li><a href="#" >Help</a></li>
+       </ul>
+     </nav>
+   </header>
+   <section id="main">
+     <div class="container">
+       <div></div>
+       <div class="info">
+          <h1>Spider Man</h1>
+          <p>
+            <blockquote>
+         
+            </blockquote>
+            </p>
+       </div>
+      
+     </div>
+   </section>
+   <section id="bio">
+     <div class="container-bio">
+       <div></div>
+       <div class="info">
+          <h1>BIO</h1>
+          <p>
+            
+       </div>
+   </section>
+   <footer>
+phani_garimalla333
+    </footer>
+  
   click <a href="index.html"><button style="height:50px;width:125px;border-radius:10px;background-color:#000810; color:#003972;">here</button></a> to go home 
 </body>
 </html>
